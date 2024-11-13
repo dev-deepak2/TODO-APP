@@ -112,30 +112,30 @@ form {
   display: flex;
   align-items: center;
   cursor: pointer;
-  position: relative; /* Added this so the dot appears correctly */
+  position: relative; 
 }
 
 .todo-text {
   font-size: 18px;
   padding: 10px 25px 10px;
   cursor: pointer;
-  position: relative; /* Required to place the dot correctly */
+  position: relative; 
 }
 
-/* Create the dot before the todo text */
+/* Creatingg the dot before the todo text .....*/
 .todo-text::before {
-  content: ''; /* No text, just a dot */
+  content: ''; 
   position: absolute;
-  left: 0; /* Place it at the left of the text */
-  top: 50%; /* Center it vertically */
-  transform: translateY(-50%); /* Adjust the vertical alignment */
-  width: 8px; /* Size of the dot */
-  height: 8px; /* Size of the dot */
-  border-radius: 50%; /* Make it round */
-  background-color: var(--text-color); /* Color of the dot */
+  left: 0; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  width: 8px; 
+  height: 8px; 
+  border-radius: 50%; 
+  background-color: var(--text-color); 
 }
 
-/* Custom checkbox styles */
+
 .custom-checkbox {
   width: 20px;
   height: 20px;
@@ -181,8 +181,8 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
 }
 
 input[type="checkbox"]:checked + .custom-checkbox {
-  background-color: #394858; /* Change to desired color when checked */
-  border-color: #394858; /* Border color when checked */
+  background-color: #394858; 
+  border-color: #394858; 
 }
 
 input[type="checkbox"]:checked ~ .todo-text {
